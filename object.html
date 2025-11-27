@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        function object (obj1,obj2){
+            const keys=Object.keys(obj2);
+            const fil= keys.filter(key=>obj1[key]===obj2[key]);
+            return fil.length=keys.length;
+        }
+        const a={nom:"dema", Age:25,ville:"paris"};
+        const b={age:34, prenom:"junior"};
+        console.log(object(a,b));
+    </script>
+</body>2
+</html>

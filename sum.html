@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum</title>
+</head>
+
+<body>
+    <script>
+        function sum(n) {
+         return Array.from({length:n},(_, i)=>i+1) //create  an array 
+         .filter(num=>true)
+         .reduce((somme,num)=>somme+num**3,0);       
+        }
+        console.log(sum(5));
+    </script>
+</body>
+
+</html>

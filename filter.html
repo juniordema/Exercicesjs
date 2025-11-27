@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            const books = [
+                { title: "book A", pages: 150 },
+                { title: "book b", pages: 300 },
+                { title: "book c", pages: 280 },
+                { title: "book d", pages: 400 },
+                { title: "book d", pages: 380 }
+
+            ];
+            const newbook = books.filter(book => book.pages > 300);
+            console.log(newbook);
+        </script>
+    </body>
+
+    </html>
+</body>
+
+</html>
