@@ -1,10 +1,12 @@
 
-const fectData = () => {
-    return new Promise((resolve,) => {
-        const delay = Math.floor(Math.random() * (3000 - 1000 + 1)) + 1000;
+const fetchData = () => {
+    return new Promise((resolve) => {
+        const randomDelay = Math.floor(Math.random() * (3000 - 1000 + 1)) + 1000;
         setTimeout(() => {
             resolve("Data fetched successfully!");
-        }, delay);
+        }, randomDelay);
     });
-}
-fectData().then((message) => console.log(message));
+};
+
+fetchData().then((resultMessage) => console.log(resultMessage));
+

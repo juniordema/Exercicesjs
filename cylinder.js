@@ -1,13 +1,14 @@
-
- class cylinder {
+class Cylinder {
     constructor(radius, height) {
         this.radius = radius;
         this.height = height;
     }
+
     getVolume() {
-        let volume = Math.PI * Math.pow(this.radius, 2) * this.height;
-        return volume.toFixed(4);
+        let cylinderVolume = Math.PI * Math.pow(this.radius, 2) * this.height;
+        return cylinderVolume.toFixed(4);
     }
 }
-let cyl = new cylinder(10, 20);
-console.log("volume of cylinder:" + cyl.getVolume());
+
+let myCylinder = new Cylinder(10, 20);
+console.log("Volume of cylinder: " + myCylinder.getVolume());

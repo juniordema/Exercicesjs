@@ -1,8 +1,9 @@
 
-        const car={
-            make:"toyota",
-            model:"corolla"
-        };
-        const {make,model,year="unknown"}=car;
-        console.log(`make: ${make}, model: ${model}, year: ${year}`);
-   
+export const vehicle = {
+    brand: "toyota",
+    modelName: "corolla"
+};
+
+const { brand, modelName, year = "unknown" } = vehicle;
+
+console.log(`Brand: ${brand}, Model: ${modelName}, Year: ${year}`);

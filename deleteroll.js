@@ -1,8 +1,9 @@
-
-const students = {
-    name: "David Rayy",
-    sclass: "VI",
-    rollno: 12
+const student = {
+    fullName: "David Rayy",
+    className: "VI",
+    rollNumber: 12
 };
-delete students.rollno;
-console.log(students);
+
+delete student.rollNumber;
+
+console.log(student);

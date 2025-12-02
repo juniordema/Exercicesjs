@@ -1,144 +1,181 @@
-import { expect, test } from 'vitest'
+import { describe, expect, test } from 'vitest'
 
-import { average } from './average.js'
-
-import { calculateArea } from './calculateArea.js';
-
-import { car } from './car.js';
-
-import { chaineLongue } from './chaineLongue.js';
-
-import { chrismax } from './christmas.js';
-
-import { clock } from './clock.js';
-
-import { combineArr } from './combineArr.js';
-
-import { cylinder } from './cylinder.js'
-
-import { supprimerDoublons } from './delete.js';
-
-import { students } from './deleteroll.js'
-
-import { extract } from './extract.js'
+import { extract } from './extractValuesAtIndexes.js'
+describe('extract function', () => {
+        test('should should extracts specific properties from an object', () => {
+                expect(extract).toEqual()
+        })
+})
 
 import { fectData } from './fetchData.js';
+describe('fectData function', () => {
+        test('should fetches data from an API and returns it as JSON')
+})
 
-import { books } from './filter.js'
+import { books } from './books.js'
+describe('books function', () => {
+        test('should filters books based on a specific criterion', () => {
+                expect(books).toEqual();
+        })
+})
 
-import { filter } from './filtre.js'
+import { filter } from './filterArrayValues.js'
+describe('filter function', () => {
+        test('should filters an array based on a given condition', () => {
+                expect(filter).toEqual();
+        })
+})
 
 import { findMax } from './findMAx.js'
+describe('findMax function', () => {
+        test('should finds the maximun value in an array', () => {
+                expect(findMax).toEqual();
+        })
+})
 
-import { num } from './index.js'
+import { num } from './guessRandomNumber.js'
+describe('num function', () => {
+        test('should returns the sum of two numbers', () => {
+                expect(num).toEqual();
+        })
+})
 
-import { toLowerCaseString } from './lower_case.js'
+import { toLowerCaseString } from './ isLowerCase.js'
+describe('toLowercaseString function', () => {
+        test('should converts a string to lowercase', () => {
+                expect(toLowerCaseString).toEqual();
+        })
+})
 
 import { map } from './map.js'
-
-import{euler} from './eulers.js'
-
-import{num1,num2} from './multiplie.js'
-
-import{even} from './numberpaire.js' 
-
-import{object} from './object.js'
-
-import{add} from './promise.js'
-
-import{sum} from './sum.js'
-
-import{produit,prix,quantite} from './template.js'
-
-test('produit,prix, quantite',()=>{
-        expect(produit,prix,quantite).toBe()
-})
-test('sum',()=>{
-        expect(sum).toEqual();
+describe('map function', () => {
+        test('should maps an array to a new array based on a given transformation', () => {
+                expect(map).toEqual();
+        })
 })
 
-test('add',()=>{
-        expect(add).toEqual();
+import { euler } from './eulers.js'
+describe('eulers function', () => {
+        test('should returns the value of Euler\'s number', () => {
+                expect(euler).toEqual()
+        })
 })
 
-test('object',()=>{
-        expect(object).toEqual()
+import { num1, num2 } from './calculateMultiplicationAndDivision.js'
+describe('multiple function', () => {
+        test('should performs multiplication and division on two numbers', () => {
+                expect(num1, num2).toEqual();
+        })
 })
 
- test('even',()=>{
-        expect(even).toEqual();
- })
-test('num1, num2',()=>{
-        expect(num1,num2).toEqual();
+import { even } from './findLargestEvenNumber.js'
+describe('even function', () => {
+        test('should returns the largest even number from an array', () => {
+                expect(even).toEqual();
+        })
 })
 
-test('eulers',()=>{
-        expect(euler).toEqual();
-})
-test('arr', () => {
-        expect(map).toEqual();
-})
-
-test('toLowerCaseString', () => {
-        expect(toLowerCaseString).toEqual();
+import { object } from './SubsetObject.js'
+describe('object', () => {
+        test('should checks the properties of an object', () => {
+                expect(object).toEqual();
+        })
 })
 
-test('num', () => {
-        expect(num).toEqual();
-})
-test('findMAx', () => {
-        expect(findMax).toEqual();
-})
-test('filter', () => {
-        expect(filter).toEqual();
+import { add } from './add.js'
+describe('add functioon', () => {
+        test('should adds two numbers asynchronously', () => {
+                expect(add).toEqual();
+        })
 })
 
-test('books', () => {
-        expect(books).toEqual();
-})
-test('fectData', () => {
-        expect(fectData).toEqual();
-})
-
-test('extract', () => {
-        expect(extract).toEqual()
-})
-test('students', () => {
-        expect(students).toEqual();
-})
-test('supprimerDoublons', () => {
-        expect(supprimerDoublons).toEqual()
+import { sum } from './ sumOfCubes.js'
+describe('sum function', () => {
+        test('should calculates the sum of an array of numbers', () => {
+                expect(sum).toEqual();
+        })
 })
 
-test('cylinder', () => {
-        expect(cylinder).toEqual()
+import { produit, prix, quantite } from './purchaseMessage.js'
+describe('template function', () => {
+        test('should generates a product description using template literals', () => {
+                expect(produit, prix, quantite).toBe()
+        })
 })
 
-test('combineArr', () => {
-        expect(combineArr).toEqual()
+import { students } from './deleteroll.js'
+describe('students function', () => {
+        test('should removes a student from the array based on the given roll number', () => {
+                expect(students).toEqual();
+        })
 })
 
-test('clock', () => {
-        expect(clock).toEqual()
+import { supprimerDoublons } from './removeDuplicateCharacters.js';
+describe('supprimerDoublons function', () => {
+        test('should removes duplicate values from an array', () => {
+                expect(supprimerDoublons).toEqual();
+        })
 })
 
-test('chrismax', () => {
-        expect(chrismax).toEqual()
+import { combineArr } from './combineUniqueSorted.js';
+describe('combbineArr function', () => {
+        test('should combines two arrays into one', () => {
+                expect(combineArr).toEqual();
+        })
 })
 
-test('chaineLongue', () => {
-        expect(chaineLongue).toEqual()
+
+import { cylinder } from './cylinder.js'
+describe('cylinder function', () => {
+        test('should calculates the volume of a cylinder given radius and height', () => {
+                expect(cylinder).toEqual();
+        })
+})
+import { clock } from './startClock.js';
+describe('clock function', () => {
+        test('should returns the current time in HH:MM:SS format', () => {
+                expect(clock).toEqual();
+        })
 })
 
-test('car', () => {
-        expect(car).toEqual()
+import { chrismax } from './daysUntilChristmas.js';
+describe('chrismax function', () => {
+        test('should returns the number of days until christmas', () => {
+                expect(chrismax).toEqual();
+        }
+        )
 })
 
-test('calculateArea', () => {
-        expect(calculateArea(5)).toBe(78.53981633974483);
-});
+import { chaineLongue } from './findLongestString.js';
+describe('chaineLongue function', () => {
+        test('should returns the longest string from an array of strings', () => {
+                expect(chaineLongue).toEqual();
+        })
+})
 
-test('average', () => {
-        expect(average(89, 85, 78, 92)).toEqual(86);
 
-}); 
+import { car } from './car.js';
+describe('car object', () => {
+        test('should has make, model, and year properties', () => {
+                expect(car).toEqual()
+        })
+})
+
+
+
+
+import { calculateArea } from './calculateArea.js';
+describe('calculateArea function', () => {
+        test('should calculates area of circle wirh radiua 5', () => {
+                expect(average(89, 85, 78, 92)).toEqual(86);
+
+        })
+})
+
+
+
+import { average } from './average.js'
+describe('average function', () => {
+        test('should calculates the average of the result rounded to two decimal places', () => {
+        });
+})
