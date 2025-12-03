@@ -1,5 +1,5 @@
 
-const fetchData = () => {
+export const fetchData = () => {
     return new Promise((resolve) => {
         const randomDelay = Math.floor(Math.random() * (3000 - 1000 + 1)) + 1000;
         setTimeout(() => {

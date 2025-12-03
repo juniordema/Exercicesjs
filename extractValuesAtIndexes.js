@@ -1,5 +1,5 @@
 
-const extractValuesAtIndexes = (sourceArray, indexList) => {
+export const extractValuesAtIndexes = (sourceArray, indexList) => {
     return indexList.map(idx => sourceArray[idx]);
 };
 

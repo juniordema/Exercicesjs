@@ -1,7 +1,8 @@
 
 export const vehicle = {
-    brand: "toyota",
-    modelName: "corolla"
+    make: "toyota",
+    model: "corolla",
+    year: 2020
 };
 
 const { brand, modelName, year = "unknown" } = vehicle;

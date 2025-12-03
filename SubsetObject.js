@@ -1,5 +1,5 @@
 
-    const isSubsetObject = (mainObject, subObject) => {
+   export const isSubsetObject = (mainObject, subObject) => {
     const subKeys = Object.keys(subObject);
     const matchedKeys = subKeys.filter(key => mainObject[key] === subObject[key]);
     return matchedKeys.length === subKeys.length;

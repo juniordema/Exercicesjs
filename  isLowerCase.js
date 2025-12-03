@@ -1,5 +1,5 @@
 
-  const isLowerCase = (stringToCheck) => {
+  export const isLowerCase = (stringToCheck) => {
   return stringToCheck === stringToCheck.toLowerCase();
 };
 

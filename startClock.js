@@ -10,6 +10,7 @@ export const displayTime = () => {
 
     const clockString = hours + ":" + minutes + ":" + seconds;
     console.log(clockString);
+      return clockString;
 };
 
 setInterval(displayTime, 1000);

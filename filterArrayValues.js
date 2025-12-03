@@ -1,5 +1,4 @@
-
-const filterArrayValues = (sourceArray, valuesToRemove) => {
+export const filterArrayValues = (sourceArray, valuesToRemove) => {
     return sourceArray.filter(element => !valuesToRemove.includes(element));
 };
 

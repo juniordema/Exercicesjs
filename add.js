@@ -1,4 +1,4 @@
-const add = (firstNumber, secondNumber) => {
+export const add = (firstNumber, secondNumber) => {
     return new Promise((resolve, reject) => {
         if (firstNumber === undefined || secondNumber === undefined) {
             reject("Must provide two numbers");

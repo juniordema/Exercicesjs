@@ -1,5 +1,5 @@
 
-const findLargestEvenNumber = (numbers) => {
+export const findLargestEvenNumber = (numbers) => {
     const evenNumbers = numbers.filter(num => num % 2 === 0);
     if (evenNumbers.length === 0) {
         return null;

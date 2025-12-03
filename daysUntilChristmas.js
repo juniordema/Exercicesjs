@@ -1,14 +1,8 @@
-export const daysUntilChristmas = () => {
-    const today = new Date();
-    const currentYear = today.getFullYear();
-    let christmasDate = new Date(currentYear, 11, 25);
-
-    if (today > christmasDate) {
-        christmasDate = new Date(currentYear + 1, 11, 25);
+export const daysUntilChristmas=(currentDate = new Date())=>{
+    const christmas=new Date(currentDate.getFullYear(),11,25);
+    if(currentDate>christmas){
+        christmas.setFullYear(currentDate.getFullYear()+1);
     }
-
-    const differenceMs = christmasDate - today;
-    const differenceInDays = Math.ceil(differenceMs / (1000 * 60 * 60 * 24));
-
-    return differenceInDays;
-};
+    const diffTime=christmas-currentDate;
+    return Math.ceil(diffTime/(1000*60*60*24));
+}

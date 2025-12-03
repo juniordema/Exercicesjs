@@ -1,10 +1,6 @@
-
-const removeDuplicateCharacters = (inputString) => {
+export const removeDuplicateCharacters = (inputString) => {
     return inputString
         .split("")
-        .filter((character, _, charactersArray) => charactersArray.indexOf(character) === charactersArray.lastIndexOf(character))
+        .filter(char => inputString.indexOf(char) === inputString.lastIndexOf(char))
         .join("");
 };
-
-console.log(removeDuplicateCharacters("programmation"));
-console.log(removeDuplicateCharacters("javascript"));

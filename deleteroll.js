@@ -1,4 +1,4 @@
-const student = {
+export const student = {
     fullName: "David Rayy",
     className: "VI",
     rollNumber: 12
